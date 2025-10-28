@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ريمون  حبيب عياد - محامٍ جنائي بخبرة 30 عامًا</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ريمون عياد - محامٍ جنائي بخبرة 30 عامًا</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -23,14 +24,9 @@
                 <li class="nav-item">
                     <a href="#about" class="nav-link">من نحن</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">الخدمات</a>
-                </li>
+               
                 <li class="nav-item">
                     <a href="#experience" class="nav-link">الخبرات</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials" class="nav-link">آراء العملاء</a>
                 </li>
                 <li class="nav-item">
                     <a href="#blog" class="nav-link">المدونة</a>
@@ -52,7 +48,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">المستشار ريمون حبيب عياد</h1>
             <h2 class="hero-subtitle">محامٍ جنائي بخبرة 30 عامًا</h2>
@@ -61,9 +56,6 @@
                 <a href="#contact" class="btn btn-primary">احجز استشارة الآن</a>
                 <a href="#about" class="btn btn-secondary">تعرف علينا</a>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -106,7 +98,7 @@
     </section>
 
     <!-- Services Section -->
-    
+
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
@@ -120,8 +112,6 @@
                     <div class="stat-number">30+</div>
                     <div class="stat-label">سنة خبرة</div>
                 </div>
-             
-           
                 <div class="stat-card">
                     <div class="stat-number">عاليه%</div>
                     <div class="stat-label">معدل النجاح</div>
@@ -130,8 +120,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-   
     <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="container">
@@ -221,7 +209,9 @@
                 <h2>تواصل معنا</h2>
                 <p>احجز استشارة قانونية أو تواصل معنا</p>
             </div>
+
             <div class="contact-content">
+                <!-- Contact Info -->
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -230,6 +220,7 @@
                             <p>+20 01226105036 - 01111813040</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
@@ -237,58 +228,81 @@
                             <p>atefandrew9191@gmail.com</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>العنوان</h4>
-                            <p>محافظة المنيا مركز مغاغه شارع الزهور فوق مجوهرات السرجاني </p>
+                            <p>محافظة المنيا مركز مغاغه شارع الزهور فوق مجوهرات السرجاني</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>ساعات العمل</h4>
-                            <p>السبت - الأربع: 9:00 ص - 11:00 م - عدا الخميس من 9 صباح :3 عصرا والجمعه من 7مساءا الى 11 مساءا</p>
+                            <p>السبت - الأربع: 9:00 ص - 11:00 م<br>الخميس: 9 ص - 3 ع<br>الجمعة: 7 م - 11 م</p>
                         </div>
                     </div>
+
                     <div class="whatsapp-contact">
-                        <a href="https://wa.me/+2001226105036" class="whatsapp-btn" target="_blank">
+                        <a href="https://wa.me/201226105036" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i>
-                            تواصل عبر واتساب
+                            تواصل مباشر عبر واتساب
                         </a>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
+                            <span class="error-message" id="name-error"></span>
                         </div>
+
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                            <span class="error-message" id="email-error"></span>
                         </div>
+
                         <div class="form-group">
                             <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required>
+                            <span class="error-message" id="phone-error"></span>
                         </div>
+
                         <div class="form-group">
                             <select id="service" name="service" required>
                                 <option value="">اختر نوع الخدمة</option>
-                                <option value="criminal">قضايا جنائية</option>
-                                <option value="civil">قضايا مدنية</option>
-                                <option value="corporate">قضايا شركات</option>
-                                <option value="personal">أحوال شخصية</option>
-                                <option value="contracts">صياغة عقود</option>
-                                <option value="consultation">استشارة قانونية</option>
+                                <option value="قضايا جنائية">قضايا جنائية</option>
+                                <option value="قضايا مدنية">قضايا مدنية</option>
+                                <option value="قضايا شركات">قضايا شركات</option>
+                                <option value="أحوال شخصية">أحوال شخصية</option>
+                                <option value="صياغة عقود">صياغة عقود</option>
+                                <option value="استشارة قانونية">استشارة قانونية</option>
                             </select>
+                            <span class="error-message" id="service-error"></span>
                         </div>
+
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="تفاصيل القضية أو الاستشارة" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span id="btn-text">إرسال البيانات إلى واتساب</span>
+                            <div class="loading-spinner" id="loading-spinner" style="display: none;"></div>
+                        </button>
+                        
+                        <div class="success-message" id="success-message">
+                            تم إرسال البيانات بنجاح! سيتم فتح واتساب الآن...
+                        </div>
+                        
+                        <div class="form-note">
+                            <p>سيتم فتح تطبيق واتساب لإرسال البيانات مباشرة إلى المحامي</p>
+                        </div>
                     </form>
                 </div>
-            </div>
-            <div class="map-container">
-
             </div>
         </div>
     </section>
@@ -328,7 +342,7 @@
                     <h4>معلومات الاتصال</h4>
                     <p><i class="fas fa-phone"></i> +20 0126105036</p>
                     <p><i class="fas fa-envelope"></i> atefandrew9191@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> >محافظة المنيا مركز مغاغه ششارع الزهور فوق مجوهرات السرجاني </p>
+                    <p><i class="fas fa-map-marker-alt"></i> محافظة المنيا مركز مغاغه شارع الزهور فوق مجوهرات السرجاني </p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -337,7 +351,7 @@
         </div>
     </footer>
 
+
     <script src="script.js"></script>
 </body>
 </html>
-
